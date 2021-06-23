@@ -79,6 +79,19 @@ def lists():
     print(k[::2])
     print(k[:12:])
 
+ #Methods associated with lists
+    #Replace using indexes
+    k[12] = 1000
+    print(F"New k = {k}")
+    k[14:20] = [77] * 4
+    print(k, len(k))
+    del k[17]
+    print(k,len(k))
+    k.append(6)
+    print(k)
+
+
+
 
 
 if __name__ == "__main__":
