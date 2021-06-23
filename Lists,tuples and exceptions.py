@@ -38,6 +38,48 @@ def lists():
     print(f"The last item is {v1[-1]}")
     print(f"The second last item is {v1[-2]}")
     #Finding the position of an item we know of
+    print(f"6th is at {v1.index(5)}")
+    #Multiplication operator on lists
+    d  = [3] * 20
+    print(d,"of length ",len(d))
+    #This gives an error aswe cannot multiply a list with another list
+    #e = [2]* [4]
+    #print(e)
+
+    e = 20 * [5]
+    print(e)
+     #Counting items in list
+    v = [3] * 10 + [5,6,7]
+    print(v)
+    print(f"There are {v.count(3)} instances in list v")
+
+    print("f"* 10)
+    #Tracing index in a list
+    s = "This is a good sentence to work with"
+    print(s[8])
+    #Range of indexes
+    print(s[1:7])
+    #Rnge function
+    r = list(range(20))
+    print(r[3:10])
+    #Range with step
+    print(r[3:10:2])
+    #Range with a start value
+    l = list(range(15,20))
+    w = list(range(15, 20,2))
+    print(l)
+    print(w)
+    k = list(range(12, 100, 3))
+    print(k)
+    print(k[-10:-1])
+    print(k[-10:-1:2])
+    print(k[-1:-10:-2])
+    #Slicing
+    print(k)
+    print(k[::2])
+    print(k[:12:])
+
+
 
 if __name__ == "__main__":
     sys.exit(lists())
