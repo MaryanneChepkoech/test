@@ -90,6 +90,29 @@ def lists():
     k.append(6)
     print(k)
 
+    #Tuples
+    t = tuple()
+    print(t,type(t))
+    print(len(t))
+    s = ()
+    print(s,type(s))
+    s = ("car")
+    print(s,type(s))
+    #Creation of single item tuple
+    t = (0,)
+    print(t,type(t))
+    u = 5,6
+    print(u,type(u))
+    t = (5,6,7,8,9,10)
+    print(f"t[0] = {t[0]}")
+    print(f"t[1:3] = {t[1:3]}")
+    #Tuples do not item assignment(Immutability)
+    #t[3] = 12 This will throw an error message since you cannot change the existing tuple
+
+
+
+
+
 
 
 
