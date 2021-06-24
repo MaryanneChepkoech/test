@@ -121,10 +121,49 @@ def lists():
     #s =" Today is a good day"
     #s[0] ="p" # Error message
 
+    #Casting (Converting a list to a tuple and vice versa)
+    l = list(range(5, 120,4))
+    print(l,type(l))
+    t = tuple(l)
+    print(t,type(t))
+    l2 = list(t)
+    print(l2,type(l2))
+    #typeerror
+    #ie. Concatenation of string and integer
+    #Index error; index you are using is out of bounds
+    #l = list(range(10))
+    #print(l)
+    #l[14]
 
+    #accepting exceptions in the case of an error
+    l = list(range(10))
+    try:
+        v = l[14]
+    except IndexError as ie:
+        print(f"warning: {ie} list is too short")
+        v = 0
+    print(f"v = {v}")
+    try:
+        v = 's' + l[4]
+    except IndexError as ie:
+        print(f"warning: {ie} list is too short")
+    except TypeError as te:
+        print(f"warning: {te} not the right type")
+    except ValueError as ve:
+        print(f"warning {ve} not the right value")
+    print(f"v = {v}")
+    #Raising own type errors
+    #raise TypeError("something went wrong")
 
+    #Assertion
+    age = int(input("Your age?"))
+    try:
+        assert 0 < age < 120 #If true no exception, otherwise a special exception
+    except AssertionError:
+        print(f"Invalid age of {age}")
 
-
+    #Traceback - Shows sequence in which a code was run and how the different calls resulted in the last position
+    #Helps you debug
 
 
 
