@@ -3,8 +3,8 @@ import sys
 
 
 def main():
-    r = random.random(10)
-    print(r)
-
-if __main__ =="__name__":
+    x = [random.randint(1, 5)
+         for x in range(10)]
+    print(x)
+if __name__ =="__main__":
     sys.exit(main())
