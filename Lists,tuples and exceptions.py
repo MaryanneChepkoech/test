@@ -108,6 +108,30 @@ def lists():
     print(f"t[1:3] = {t[1:3]}")
     #Tuples do not item assignment(Immutability)
     #t[3] = 12 This will throw an error message since you cannot change the existing tuple
+    #del t[3] #gives error
+    #You can only make a new tuple and not modify it
+    t = (6,) * 12
+    print(t)
+    u = 1,3
+    v = 7,12
+    print(u,v)
+    x = u + v
+    print(x)
+    #strings are immutable (Values cannot be modified)
+    #s =" Today is a good day"
+    #s[0] ="p" # Error message
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
