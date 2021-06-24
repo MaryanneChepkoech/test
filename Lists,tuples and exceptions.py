@@ -42,7 +42,7 @@ def lists():
     #Multiplication operator on lists
     d  = [3] * 20
     print(d,"of length ",len(d))
-    #This gives an error aswe cannot multiply a list with another list
+    #Code below gives an error as we cannot multiply a list with another list
     #e = [2]* [4]
     #print(e)
 
@@ -96,7 +96,7 @@ def lists():
     print(len(t))
     s = ()
     print(s,type(s))
-    s = ("car")
+    s = ("car")# string not tuple
     print(s,type(s))
     #Creation of single item tuple
     t = (0,)
